@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/*coreia*/
+img {
+margin-left: -25px;
+
+}
+
+.coreia {
+    display: flex;
+    align-items: center;
+   justify-content: flex-start;
+}
+
+.coreia img {
+   width: 80px;
+   height: 80px;
+   object-fit: contain;
+}
+
+.korama {
+    color: rgb(7, 98, 255);
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(0, 94, 255);
+  letter-spacing: 2px;
+}
+/* cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between; /* separa logo, menu e search */
+  align-items: center;
+  padding: 1px 20px;
+  background-color: #0d0707; /* estilo Netflix */
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+/* Barra de pesquisa */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+/* cor dos icones*/
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  gap: 1230px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* cor dos icones muda com o mouse*/
+nav ul li a:hover {
+    color: #0898c8;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-box input {
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+}
+
+.search-box button {
+    background-color: #0944e5;
+    border: none;
+    color: #ededed;
+    padding: 9px 12px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #222;
+    background-color: #101010;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-left: 4px solid #0898c8;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Banner geral */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgba(2, 8, 20, 0.8) 40%, transparent 100%), url('/pretendente-surpresa-2.jpeg') center/cover no-repeat;
+  padding: 60px 80px;
+  min-height: 500px;
+}
+
+/* Coluna de texto */
+.info {
+  max-width: 450px;
+}
+
+.info h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #FFD700; /* estrela dourada */
+  font-size: 28px;
+  margin-left: 8px;
+}
+
+.label {
+  color: #00bcd4;      /* azul ou qualquer cor que queira */
+  font-weight: bold;
+}
+
+/* Símbolo/etiqueta SÉRIES */
+.tag {
+  display: inline-block;
+  background: #060916; 
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.play, .list {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.play {
+  background: #2196f3;  /* azul Viki */
+  color: #fff;
+  border: none;
+}
+
+.play:hover { background: #0b7dda; }
+
+.list {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+  margin-left: 10px;
+}
+
+.list:hover { background: #444; }
+
+
+/* Comentários */
+.comments-section {
+  margin-top: 30px;
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.comments-section h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.comment-box {
+  background: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-form textarea {
+  resize: none;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  min-height: 80px;
+}
+
+.comment-form button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  border: none;
+  background: #0550d2;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comment-form button:hover {
+  background: #0544b1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  margin-top: 40px;
+  color: #aaa;
+  font-size: 14px;
+}
