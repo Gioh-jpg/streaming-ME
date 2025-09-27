@@ -47,8 +47,13 @@ nav ul li a {
   color: white;
   gap: 1230px;
   font-size: 16px;
-  transition: 0.7s;
+  transition: 0.3s;
  
+}
+
+/* cor dos icones muda com o mouse*/
+nav ul li a:hover {
+    color: #0898c8;
 }
 
 .search-box {
@@ -131,6 +136,7 @@ h2 {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.6s;
+    text-decoration: none;
 }
 
 
@@ -174,11 +180,13 @@ main {
 }
 
 /* Container de cards */
-.cards {
+  .cards {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap;        /* ✅ permite quebrar linha */
+  gap: 20px;              /* espaço entre cards */
+  justify-content: center;/* centraliza o conjunto */
 }
+
 
 /* Cada card */
 .card {
@@ -187,7 +195,7 @@ main {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  max-width: 350px;
+  width: 180px;           
   transition: transform 0.3s;
 }
 .card:hover {
@@ -233,4 +241,18 @@ main {
   cursor: pointer;
   border-radius: 5px;
   
+}
+
+.card-link {
+  text-decoration: none;   /* tira sublinhado */
+  color: inherit;          /* usa a cor normal do texto */
+  display: inline-block;   /* para manter tamanho de bloco */
+}
+
+.card-link .card {
+  transition: transform 0.3s;
+}
+
+.card-link .card:hover {
+  transform: scale(1.03);  /* efeito hover opcional */
 }
